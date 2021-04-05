@@ -1,0 +1,82 @@
+{
+  "api": {
+    "grpc": "node,mesh,globalstate,transaction,smesher"
+  },
+  "hare": {
+    "hare-committee-size": "50",
+    "hare-exp-leaders": "5",
+    "hare-limit-concurrent": "5",
+    "hare-limit-iterations": "2",
+    "hare-max-adversaries": "24",
+    "hare-round-duration-sec": "30",
+    "hare-wakeup-delta": "30"
+  },
+  "hare-eligibility": {
+    "eligibility-confidence-param": "100",
+    "eligibility-epoch-offset": "0"
+  },
+  "main": {
+    "atxs-per-block": "25",
+    "block-cache-size": "20",
+    "genesis-active-size": "100",
+    "genesis-time": "2021-04-04T08:32:21.067+00:00",
+    "hdist": "10",
+    "layer-average-size": "50",
+    "layer-duration-sec": "300",
+    "layers-per-epoch": "288",
+    "poet-server": "35.193.62.60:8080",
+    "sync-interval": "10",
+    "sync-request-timeout": "60000",
+    "sync-validation-delta": "30"
+  },
+  "p2p": {
+    "buffer-size": "10000",
+    "conn-keepalive": "48h",
+    "dial-timeout": "1m",
+    "max-inbound": "32",
+    "max-pending-connections": "100",
+    "msg-size-limit": "0",
+    "network-id": "127",
+    "outbound-target": "10",
+    "response-timeout": "60s",
+    "session-timeout": "15s",
+    "swarm": {
+      "alpha": "3",
+      "bootnodes": [
+        "spacemesh://5Fm78nSX9nsD12AyHGh8XKwm9K2fYkGC95gSBYwDfizk@35.232.118.178:11004",
+        "spacemesh://EJy7BeSfYhBhgNbgj3mgA78FGiQRpRXJZGMe9N8dDuNw@35.232.118.178:11006",
+        "spacemesh://8rLfvDaeUEq9atsYUaTK34pzssp7YeqENnytVuUjgNfb@35.193.36.174:11010",
+        "spacemesh://EGP6Y5FZ2jwcAL3Gdz8TvhD5WLAcRnTyuzmCNdVzUvAa@35.232.118.178:11002",
+        "spacemesh://GHm5tFw57nqNvbsF161stFxNG5qc1Y5YaARc8hEEuxHc@35.194.63.186:11003",
+        "spacemesh://H1CqKc1VgjVQZ5NRMgJhnGJTau6t82vg2JhPeTaXjk1v@35.232.79.133:11007",
+        "spacemesh://FTUdgnrgKjMYENakMXdM68i8PCqxvnaetaDDKqm74oVD@35.223.72.106:11005",
+        "spacemesh://24riu2Egf91W3GYuLLjRKfv9AUXWmDotidqVmmv73Bh3@34.121.54.251:11009",
+        "spacemesh://SUPHdzGcoYD6MtPBeztvRszLwuPswyLQ3LTRSNnUDZZ@35.232.118.178:11001",
+        "spacemesh://82nXDwgye8xJcXkB6654YAQmFZFkXfg5hruWYkYPLrQK@35.239.63.254:11008"
+      ],
+      "bootstrap": true,
+      "bucketsize": "20",
+      "randcon": "8"
+    }
+  },
+  "post": {
+    "post-labels": "50",
+    "post-space": "4294967296"
+  },
+  "reward": {
+    "base-reward": {
+      "abs": "50000000000000"
+    }
+  },
+  "telemetry": {
+    "channels": "discovery,epoch",
+    "enabled": true,
+    "endpoint": "https://us-central1-spacecraft-id.cloudfunctions.net/tweedlelite127"
+  },
+  "time": {
+    "default-timeout-latency": "10s",
+    "max-allowed-time-drift": "10s",
+    "ntp-queries": "5",
+    "refresh-ntp-interval": "30m"
+  }
+}
